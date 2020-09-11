@@ -1,0 +1,22 @@
+{
+  "name": "the_odin_project",
+  "version": "1.0.0",
+  "description": "Copy of The Odin Project's HTML / CSS Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "browerslist": "last 4 versions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aure-en/the_odin_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aure-en/the_odin_project/issues"
+  },
+  "homepage": "https://github.com/Aure-en/the_odin_project#readme"
+}

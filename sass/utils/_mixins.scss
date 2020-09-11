@@ -1,0 +1,12 @@
+@mixin fonts($color: $color-primary, $size: map-get($font-sizes, main), $weight: 300, $decoration: none) {
+  color: $color;
+  font-size: $size;
+
+  @if ($weight != 300) {
+    font-weight: $weight;
+  }
+
+  @if ($decoration != "none") {
+    text-decoration: $decoration;
+  }
+}

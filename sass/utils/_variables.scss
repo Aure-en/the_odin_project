@@ -1,0 +1,25 @@
+/* Colors */
+$color-primary: #a4a4a4;
+$color-secondary: #cc9543;
+$color-tertiary: #6abfc3;
+$color-background: #f3f3f3;
+
+/* Fonts */
+$fonts: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-sizes: (
+  main: 1.125rem,
+  h1: 2.25rem,
+  h2: 1.25rem,
+  h3: 1.5rem,
+  small: 1rem,
+  navlink: 2.7rem
+);
+
+/* Breakpoints */
+
+$breakpoints: (
+  medium: 768px,
+  large: 992px,
+  x-large: 1200px
+);

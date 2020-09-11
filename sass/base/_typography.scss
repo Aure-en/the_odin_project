@@ -1,0 +1,22 @@
+/* Body */
+body {
+  @include fonts();
+}
+
+/* Titles */
+h1 {
+  @include fonts($color-primary, map-get($font-sizes, h1), 300);
+}
+
+h2 {
+  @include fonts($color-primary, map-get($font-sizes, h2), 700);
+}
+
+h3 {
+  @include fonts($color-primary, map-get($font-sizes, h3), 300);
+}
+
+/* Links */
+a {
+  @include fonts($color-secondary, map-get($font-sizes, main), 300, underline $color-secondary);
+}
