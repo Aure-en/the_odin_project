@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
   <script src="https://kit.fontawesome.com/9fbb921c08.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,195 +16,234 @@
 
   <div class="wrapper">
 
-  <header class="row">
+  <header class="container-fluid header">
 
-    <div class="header__brand brand">
-      
-    </div>
+      <a class="header__brand brand" href="https://theodinproject.com/home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="67" height="89" viewBox="0 0 67 89"><defs><linearGradient id="a" x1="43.923%" x2="78.855%" y1="59.791%" y2="62.034%"><stop offset="0%" stop-color="#E6E6E6"/><stop offset="56%" stop-color="#D8D8D8"/><stop offset="100%" stop-color="#A1A1A1"/></linearGradient><linearGradient id="b" x1="2.783%" x2="109.278%" y1="53.432%" y2="63.534%"><stop offset="0%" stop-color="#E6E6E6"/><stop offset="56%" stop-color="#D8D8D8"/><stop offset="100%" stop-color="#A1A1A1"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#EED9C3" d="M13.242 52.512l6.701-23.295h26.804l6.7 23.295z"/><ellipse cx="41.94" cy="41.032" fill="#353535" rx="1.894" ry="1.875"/><path fill="#A78347" d="M29.408 38.9c0-.655-.536-1.185-1.197-1.185h-5.647c-.66 0-1.197.53-1.197 1.185v3.67c0 .983.804 1.779 1.795 1.779h2.056a4.213 4.213 0 0 0 2.963-1.216 4.127 4.127 0 0 0 1.227-2.933v-1.3z"/><path fill="#DCA140" d="M59.805 25.976l-6.7 6.634v-6.634l8.376-6.634z"/><path fill="#E1AA4F" d="M61.48 19.681l-8.376 6.634v-6.634l10.052-6.634z"/><path fill="#E3B261" d="M53.204 6.953L66.506.118l-3.35 13.269-9.952 6.834z"/><path fill="#DCA140" d="M6.884 25.976l6.701 6.634v-6.634L5.21 19.342z"/><path fill="#E1AA4F" d="M5.209 19.681l8.376 6.634v-6.634L3.534 13.047z"/><path fill="#E3B261" d="M13.351 6.732L.183.118l3.35 13.269L13.352 20z"/><path fill="#E3B261" d="M53.448 19.342s-10.052-6.634-20.103-6.634c-10.052 0-20.103 6.634-20.103 6.634v19.902l2.68 5.307c2.22-8.468 9.724-11.067 16.776-5.79l.647.483.646-.483c7.045-5.271 14.566-2.64 16.776 5.79l2.68-5.307V19.342z"/><g><path fill="url(#a)" d="M19.097 10.176l-5.361 31.18-7.392-5.307 6.052-22.556z" transform="translate(7.547 39.02)"/><path fill="url(#a)" d="M45.25 10.176l-5.36 31.18-7.392-5.307 6.052-22.556z" transform="matrix(-1 0 0 1 85.297 39.02)"/><path fill="url(#b)" d="M5.695.225L.335 20.127l6.7 13.268 5.36-19.902z" transform="translate(7.547 39.02)"/><path fill="url(#b)" d="M44.56.225L39.2 20.127l6.7 13.268 5.36-19.902z" transform="matrix(-1 0 0 1 98.008 39.02)"/><path fill="#E6E6E6" d="M26.644 49.195l-6.03 32.507 12.73 6.634 12.733-6.634-6.031-32.507-6.201-3.07-.5-.247z"/></g><path fill="#353535" d="M35.746 50.522h-4.69v1.66c0 .616.247 1.205.687 1.64.44.436 1.035.68 1.657.68h.002c.622 0 1.218-.244 1.658-.68.44-.435.686-1.024.686-1.64v-1.66z"/></g></svg>
+        <div class="brand__text">THE ODIN PROJECT</div>
+      </a>
 
-    <nav>
-      <ul>
-        <li><a href="https://theodinproject.com/tracks">Curriculum</a></li>
-        <li><a href="">Community</a></li>
-        <li><a href="https://theodinproject.com/about?ref=homenav">About</a></li>
-        <li><a href="https://theodinproject.com/faq?ref=homenav">FAQ</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="https://theodinproject.com/tracks">Curriculum</a></li>
+          <li class="community"><a class="nav-link test" href="">Community <i class="fas fa-caret-down"></i></a>
+            <ul class="community__menu box box--small hidden">
+              <li><a class="social-link" href="https://forum.theodinproject.com/"><i class="fas fa-users"></i> Forum</a></li>
+              <li><a class="social-link" href="https://discord.com/invite/V75WSQG"><i class="fas fa-comment"></i> Chat</a></li>
+            </ul>
+          </li>
 
-      <ul>
-        <li><a href="https://theodinproject.com/sign_up?ref=homenav">Sign Up</a></li>
-        <li><a href="https://theodinproject.com/login?ref=homenav">Login</a></li>
-      </ul>
+          <li><a class="nav-link" href="https://theodinproject.com/about?ref=homenav">About</a></li>
+          <li><a class="nav-link" href="https://theodinproject.com/faq?ref=homenav">FAQ</a></li>
+          <li>|</li>
+          <li><a class="nav-link" href="https://theodinproject.com/sign_up?ref=homenav">Sign Up</a></li>
+          <li><a class="nav-link" href="https://theodinproject.com/login?ref=homenav">Login</a></li>
+        </ul>
 
-    </nav>
+      </nav>
 
   </header>
 
-  <main class="main container">
+  <main class="container-fluid">
 
-    <header class="main__header">
+    <div class="main container">
 
-      <h1>HTML and CSS</h1>
+      <header class="main__header">
 
-      <h2>PROJECT: DESIGN YOUR OWN GRID-BASED FRAMEWORK</h2>
+        <a href="https://theodinproject.com/courses/html-and-css">
+          <div class="progress">
+          <img class="progress__image" src="sass/assets/images/html.svg">
+        </div>
 
-    </header>
+          <h1>HTML and CSS</h1>
+        </a>
 
-    <div class="row">
+        <h2>PROJECT: DESIGN YOUR OWN GRID-BASED FRAMEWORK</h2>
 
-      <aside class="main__aside col-3">
+      </header>
 
-        <nav>
-          <ul>
-            <li><a href="">Introduction/a></li>
-            <li><a href="">Assignment</a></li>
-            <li><a href="">Additional Ressources</a></li>
-          </ul>
-        </nav>
+      <div class="row-4">
 
-      </aside>
+        <aside class="col-1">
 
-      <div class="main__content col-12 col-medium-9">
+          <nav>
+            <ul>
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#assignment">Assignment</a></li>
+              <li><a href="#ressources">Additional Ressources</a></li>
+            </ul>
+          </nav>
 
-        <section class="introduction">
+        </aside>
 
-          <a href="#"><h3>Introduction</h3></a>
+        <div class="main__content col-4 col-large-3">
 
-          <p>In this final project, you’ll get to take everything you’ve learned and use it to build your own simple grid-based framework. As with the other final projects, we’ll keep it relatively open-ended to give you a chance to exercise your creativity and problem-solving skills. It will be a great project to show off to potential employers as well.</p>
+          <section id="introduction">
 
-          <p>Once you’re done setting up your framework, you will use it to clone any website you like. If you’re out of ideas, try cloning The Odin Project!</p>
+            <a href="#"><h3>Introduction</h3></a>
 
-        </section>
+            <p>In this final project, you’ll get to take everything you’ve learned and use it to build your own simple grid-based framework. As with the other final projects, we’ll keep it relatively open-ended to give you a chance to exercise your creativity and problem-solving skills. It will be a great project to show off to potential employers as well.</p>
 
-        <section class="assignment">
+            <p>Once you’re done setting up your framework, you will use it to clone any website you like. If you’re out of ideas, try cloning The Odin Project!</p>
 
-          <a href="#"><h3>Assignment</h3></a>
+          </section>
 
-          <p>You’ll be creating your own grid-based framework.</p>
+          <section id="assignment">
 
-          <div class="assignment__instructions">
-            <ol>
+            <a href="#"><h3>Assignment</h3></a>
 
-              <li>Follow the instructions atop the Google Homepage project to set up a GitHub repository for this project (of course you’ll need to change the title).</li>
+            <p>You’ll be creating your own grid-based framework.</p>
 
-              <li>Create a new CSS document.</li>
+            <div class="assignment__instructions">
+              <ol>
 
-              <li>Think about the major elements that are required of a framework. This includes a CSS reset, a fixed number of grids separated by “gutters”, a way to make new rows, and default values for the font properties of elements.</li>
+                <li>Follow the instructions atop the <a class="main" href="https://theodinproject.com/courses/web-development-101/lessons/html-css">Google Homepage project</a> to set up a GitHub repository for this project (of course you’ll need to change the title).</li>
 
-              <li>Write the CSS necessary to create a basic 12-column grid framework. Check out the 960 Grid System documentation for a look at how they do it. The complexity is up to you – there’s no need to go too crazy with details (you’re not trying to rebuild Bootstrap).</li>
+                <li>Create a new CSS document.</li>
 
-              <li>Push your framework to GitHub.</li>
+                <li>Think about the major elements that are required of a framework. This includes a CSS reset, a fixed number of grids separated by “gutters”, a way to make new rows, and default values for the font properties of elements.</li>
 
-            </ol>
+                <li>Write the CSS necessary to create a basic 12-column grid framework. Check out the <a class="main" href="https://960.gs/">960 Grid System documentation</a> for a look at how they do it. The complexity is up to you – there’s no need to go too crazy with details (you’re not trying to rebuild Bootstrap).</li>
 
-            <h4>Applying the Framework</h4>
+                <li>Push your framework to GitHub.</li>
 
-            <ol>
+              </ol>
 
-              <li>Create a new HTML document and a new GitHub repository.</li>
+              <h4>Applying the Framework</h4>
 
-              <li>Identify the webpage you’d like to clone and break it down into its major elements like we have in the previous projects.</li>
+              <ol>
 
-              <li>Add your framework to your project.</li>
+                <li>Create a new HTML document and a new GitHub repository.</li>
 
-              <li>Use your framework to lay out the structure of the page.</li>
+                <li>Identify the webpage you’d like to clone and break it down into its major elements like we have in the previous projects.</li>
 
-              <li>Fill in the necessary details/images etc.</li>
+                <li>Add your framework to your project.</li>
 
-              <li>Push your solution to GitHub.</li>
+                <li>Use your framework to lay out the structure of the page.</li>
 
-              <li>Have a frosty beverage, you’re done with the HTML/CSS projects!</li>
+                <li>Fill in the necessary details/images etc.</li>
 
-            </ol>
+                <li>Push your solution to GitHub.</li>
 
-          </div>
+                <li>Have a frosty beverage, you’re done with the HTML/CSS projects!</li>
 
-        </section>
+              </ol>
 
-        <section class="solutions">
+            </div>
 
-          <h3>Student Solutions</h3>
+          </section>
 
-          <p>Submit a link below to this file on The Odin Project’s curriculum GitHub repo with your files in it by using a pull request. See the section on Contributing for how.</p>
+          <section id="solutions">
 
-          <div class="solutions__show"> Show Student Solutions</div>
+            <h3>Student Solutions</h3>
 
-        </section>
+            <p>Submit a link below to <a class="main" href="https://github.com/TheOdinProject/curriculum/blob/master/html_css/project_css_frameworks.md">this file</a> on The Odin Project’s curriculum GitHub repo with your files in it by using a pull request. See the section on <a class="main" href="https://github.com/TheOdinProject/curriculum/blob/master/contributing.md">Contributing</a> for how.</p>
 
-        <section class="additional_ressources">
+            <button type="button" class="solutions__show extra"> Show Student Solutions</button>
 
-          <h3>Additional Resources</h3>
+            <ul class="solutions__list extra">
+              <li>Add your solution below this line!</li>
+              <li><a class="main" href="">Ideopunk’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">Christian’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">Lucas Bide’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">HaroonAbdulrazaq’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">Julio’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">Igorashs’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">Kevin Vuong’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">David Auza’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">ARaut9’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+              <li><a class="main" href="">Javier Machin’s Solution</a> - <a class="main" href="">View in Browser</a></li>
+            </ul>
 
-          <p>This section contains helpful links to other content. It isn’t required, so consider it supplemental for if you need to dive deeper into something.</p>
+          </section>
 
-          <ol>
-            <li>Add some!</li>
-          </ol>
+          <section id="ressources">
 
-        </section>
+            <h3>Additional Resources</h3>
+
+            <p>This section contains helpful links to other content. It isn’t required, so consider it supplemental for if you need to dive deeper into something.</p>
+
+            <ul class="extra">
+              <li>Add some!</li>
+            </ul>
+
+          </section>
+
+        </div>
 
       </div>
 
-    </div>
+    </div>  
 
   </main>
 
   <div class="box container">
-    <a href="https://theodinproject.com/courses/html-and-css?ref=lnav" class="btn col-12 col-lg-4">View Course</a>
-    <a href="https://theodinproject.com/login" class="btn btn--secondary col-12 col-lg-4">Login to track progress</a>
-    <a href="https://theodinproject.com/courses/html-and-css/lessons/conclusion-html5-and-css3?ref=lnav" class="btn col-12 col-lg-4">Next Lesson</a>
+    <div class="row-3">
+      <a href="https://theodinproject.com/courses/html-and-css?ref=lnav" class="btn col-3 col-large-1">View Course</a>
+      <a href="https://theodinproject.com/login" class="btn btn--secondary col-3 col-large-1">Login to track progress</a>
+      <a href="https://theodinproject.com/courses/html-and-css/lessons/conclusion-html5-and-css3?ref=lnav" class="btn col-3 col-large-1">Next Lesson</a>
+    </div>
   </div>
 
-  <a href="https://github.com/TheOdinProject/curriculum/edit/master/html_css/project_css_frameworks.md">Improve this lesson on Github</a>
+  <div class="improve"><a href="https://github.com/TheOdinProject/curriculum/edit/master/html_css/project_css_frameworks.md"><i class="fab fa-github"></i> Improve this lesson on Github</a></div>
 
-  <div class="question">
-    <div class="heading">Have a question?</div>
-    Chat with our friendly Odin community in our Discord chatrooms!
-    <a href="https://discord.com/invite/V75WSQG" class="btn">Open Discord</a>
+  <div class="container question">
+    <div class="question__body">
+      <div class="heading">Have a question?</div>
+      Chat with our friendly Odin community in our Discord chatrooms!
+    </div>
+    <a href="https://discord.com/invite/V75WSQG" class="btn btn--large">Open Discord</a>
   </div>
 
-  <div class="box container">
-    <div class="row">
+  <div class="box container advertisement">
+    <div class="row-5 advertisement__head">
 
-      <div class="col-12">Are you interested in accelerating your web development learning experience?</div>
+      <h2 class="col-5 col-large-4 heading2">Are you interested in accelerating your web development learning experience?</h2>
 
-      <a href="https://www.thinkful.com/?utm_source=odin&utm_medium=cpc&utm_campaign=odin-homepage&utm_content=web-dev-3-icons" class="btn btn--secondary col-12">Get started</a>
+      <a class="btn btn--secondary col-1" href="https://www.thinkful.com/?utm_source=odin&utm_medium=cpc&utm_campaign=odin-homepage&utm_content=web-dev-3-icons">Get started</a>
 
     </div>
 
-    <div class="row">
-      <a href="https://www.thinkful.com/?utm_source=odin&utm_medium=cpc&utm_campaign=odin-homepage&utm_content=tf-logo" class="col-12 col-lg-6">Thinkful</a>
-      <ul>
-        <li class="col-12">5-6 months</li>
-        <li class="col-12">Job Guarantee</li>
-        <li class="col-12">1-on-1 Mentorship</li>
+    <div class="row-2 advertisement__body">
+      <h2><a class="advertisement__brand" href="https://www.thinkful.com/?utm_source=odin&utm_medium=cpc&utm_campaign=odin-homepage&utm_content=tf-logo" class="col-1">Thinkful</a></h2>
+      <ul class="col-1">
+        <li>5-6 months</li>
+        <li>Job Guarantee</li>
+        <li>1-on-1 Mentorship</li>
       </ul>
     </div>
 
   </div>
 
-  <footer class="container-fluid">
+  <button class="btn btn--round btn--secondary discussion" type="button"><i class="fas fa-comments"></i></button>
 
-    <div class="row">
+  <footer class="footer container-fluid">
 
-      <div class="footer__brand brand col-4">
+    <div class="row-5">
 
-      </div>
+      <a class="header__brand brand col-2" href="https://theodinproject.com/home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="67" height="89" viewBox="0 0 67 89"><defs><linearGradient id="a" x1="43.923%" x2="78.855%" y1="59.791%" y2="62.034%"><stop offset="0%" stop-color="#E6E6E6"/><stop offset="56%" stop-color="#D8D8D8"/><stop offset="100%" stop-color="#A1A1A1"/></linearGradient><linearGradient id="b" x1="2.783%" x2="109.278%" y1="53.432%" y2="63.534%"><stop offset="0%" stop-color="#E6E6E6"/><stop offset="56%" stop-color="#D8D8D8"/><stop offset="100%" stop-color="#A1A1A1"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#EED9C3" d="M13.242 52.512l6.701-23.295h26.804l6.7 23.295z"/><ellipse cx="41.94" cy="41.032" fill="#353535" rx="1.894" ry="1.875"/><path fill="#A78347" d="M29.408 38.9c0-.655-.536-1.185-1.197-1.185h-5.647c-.66 0-1.197.53-1.197 1.185v3.67c0 .983.804 1.779 1.795 1.779h2.056a4.213 4.213 0 0 0 2.963-1.216 4.127 4.127 0 0 0 1.227-2.933v-1.3z"/><path fill="#DCA140" d="M59.805 25.976l-6.7 6.634v-6.634l8.376-6.634z"/><path fill="#E1AA4F" d="M61.48 19.681l-8.376 6.634v-6.634l10.052-6.634z"/><path fill="#E3B261" d="M53.204 6.953L66.506.118l-3.35 13.269-9.952 6.834z"/><path fill="#DCA140" d="M6.884 25.976l6.701 6.634v-6.634L5.21 19.342z"/><path fill="#E1AA4F" d="M5.209 19.681l8.376 6.634v-6.634L3.534 13.047z"/><path fill="#E3B261" d="M13.351 6.732L.183.118l3.35 13.269L13.352 20z"/><path fill="#E3B261" d="M53.448 19.342s-10.052-6.634-20.103-6.634c-10.052 0-20.103 6.634-20.103 6.634v19.902l2.68 5.307c2.22-8.468 9.724-11.067 16.776-5.79l.647.483.646-.483c7.045-5.271 14.566-2.64 16.776 5.79l2.68-5.307V19.342z"/><g><path fill="url(#a)" d="M19.097 10.176l-5.361 31.18-7.392-5.307 6.052-22.556z" transform="translate(7.547 39.02)"/><path fill="url(#a)" d="M45.25 10.176l-5.36 31.18-7.392-5.307 6.052-22.556z" transform="matrix(-1 0 0 1 85.297 39.02)"/><path fill="url(#b)" d="M5.695.225L.335 20.127l6.7 13.268 5.36-19.902z" transform="translate(7.547 39.02)"/><path fill="url(#b)" d="M44.56.225L39.2 20.127l6.7 13.268 5.36-19.902z" transform="matrix(-1 0 0 1 98.008 39.02)"/><path fill="#E6E6E6" d="M26.644 49.195l-6.03 32.507 12.73 6.634 12.733-6.634-6.031-32.507-6.201-3.07-.5-.247z"/></g><path fill="#353535" d="M35.746 50.522h-4.69v1.66c0 .616.247 1.205.687 1.64.44.436 1.035.68 1.657.68h.002c.622 0 1.218-.244 1.658-.68.44-.435.686-1.024.686-1.64v-1.66z"/></g></svg>
+        <div class="brand__text">THE ODIN PROJECT</div>
+      </a>
 
-      <div class="footer__social col-4">
+      <ul class="footer__social col-1">
+        <li><a class="social-link" href="https://github.com/TheOdinProject"><i class="fab fa-github"></i></a></li>
+        <li><a class="social-link" href="https://discord.com/invite/V75WSQG"><i class="fab fa-discord"></i></a></li>
+        <li><a class="social-link" href="https://www.facebook.com/theodinproject/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a class="social-link" href="https://twitter.com/TheOdinProject"><i class="fab fa-twitter"></i></a></li>
+      </ul>
 
-      </div>
-
-      <div class="footer__links col-4">
+      <div class="footer__links col-2">
         <ul>
-          <li><a href="https://theodinproject.com/about">About</a></li>
-          <li><a href="https://theodinproject.com/faq">FAQ</a></li>
-          <li><a href="https://medium.com/the-odin-project">Blog</a></li>
+          <li><a class="nav-link" href="https://theodinproject.com/about">About</a></li>
+          <li><a class="nav-link" href="https://theodinproject.com/faq">FAQ</a></li>
+          <li><a class="nav-link" href="https://medium.com/the-odin-project">Blog</a></li>
         </ul>
 
         <ul>
-          <li><a href="https://theodinproject.com/success_stories">Success Stories</a></li>
-          <li><a href="https://theodinproject.com/contributing">Contribute</a></li>
-          <li><a href="https://theodinproject.com/terms_of_use">Terms of Use</a></li>
+          <li><a class="nav-link" href="https://theodinproject.com/success_stories">Success Stories</a></li>
+          <li><a class="nav-link" href="https://theodinproject.com/contributing">Contribute</a></li>
+          <li><a class="nav-link" href="https://theodinproject.com/terms_of_use">Terms of Use</a></li>
         </ul>
       </div>
 

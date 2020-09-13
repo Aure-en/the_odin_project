@@ -1,15 +1,15 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/grid";
 @import "./base/base";
 @import "./base/typography";
-@import "./base/grid";
-@import "./components/buttons";
+@import "./components/button";
+@import "./components/brand";
+@import "./components/progress";
+@import "./components/nav";
 @import "./layout/header";
-@import "./layout/nav";
 @import "./layout/footer";
-@import "./layout/section";
-
-.box_test {
-  height: 50px;
-  border: 1px solid blue;
-}
+@import "./layout/main";
+@import "./layout/aside";
+@import "./layout/advertisement";
+@import "./layout/others";

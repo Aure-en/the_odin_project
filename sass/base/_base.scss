@@ -48,5 +48,41 @@ table {
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+	background: $color-background;
+	width: 100vw;
+	max-width: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ul {
+	display: flex;
+	align-self: center;
+
+	li {
+		padding: .25rem .5rem;
+	}
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.hidden {
+	display: none !important;
 }

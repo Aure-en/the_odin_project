@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+}
+
+.header nav {
+  justify-content: flex-end;
+}
+
+.community {
+  position: relative;
+
+  &__menu {
+    position: absolute;
+    width: 10rem;
+    top: -1.5rem;
+    right: 0;
+  }
+}

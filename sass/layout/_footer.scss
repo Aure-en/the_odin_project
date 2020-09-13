@@ -1,0 +1,25 @@
+.footer {
+  background: $color-white;
+  padding: 5rem 0;
+
+  &__brand {
+    @include alignment();
+  }
+
+  &__social {
+    @include alignment(space-around);
+  }
+
+  &__links {
+    @include alignment();
+
+    ul {
+      flex-direction: column;
+      padding: 0 2rem;
+
+      li {
+        line-height: 1;
+      }
+    }
+  }
+}

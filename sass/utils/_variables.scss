@@ -1,22 +1,30 @@
-/* Colors */
-$color-primary: #a4a4a4;
+//Colors
+$color-primary: #4a4a4a;
 $color-secondary: #cc9543;
 $color-tertiary: #6abfc3;
+$color-light: #4a4a4ab3;
 $color-background: #f3f3f3;
+$color-hover: #000;
+$color-white: #fff;
 
-/* Fonts */
+//Fonts
 $fonts: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $font-sizes: (
   main: 1.125rem,
-  h1: 2.25rem,
-  h2: 1.25rem,
-  h3: 1.5rem,
+  large-heading: 2.25rem,
+  medium-heading: 1.25rem,
+  small-heading: 1.5rem,
   small: 1rem,
-  navlink: 2.7rem
+  x-small: 0.8125rem,
+  navlink: 2.7rem,
+  brand: 2rem,
 );
 
-/* Breakpoints */
+//Shadows
+$box-shadow: 0 .25rem 1rem 0 rgba(0,0,0,0.1);
+
+//Breakpoints
 
 $breakpoints: (
   medium: 768px,

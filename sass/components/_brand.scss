@@ -1,0 +1,8 @@
+.brand {
+  @include alignment();
+
+  svg {
+    max-height: 70px;
+  }
+
+}

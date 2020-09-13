@@ -1,0 +1,42 @@
+main {
+  background: $color-white;
+  padding: 0 5rem;
+
+}
+
+.main {
+  &__header {
+    margin: 2rem 0;
+  }
+}
+
+.assignment__instructions {
+  background: $color-background;
+  padding: 1rem 1.5rem;
+}
+
+ol {
+  list-style-type: decimal;
+
+  li {
+    margin: 1rem;
+  }
+}
+
+section {
+  
+  ul {
+    flex-direction: column;
+    list-style-type: disc;
+    margin: 1rem;
+    
+    li {
+      padding: 0;
+
+      &::marker {
+        color: $color-light;
+      }
+
+    }
+  }
+}

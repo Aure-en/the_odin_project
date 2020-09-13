@@ -1,0 +1,16 @@
+.advertisement {
+
+  &__body {
+    border-top: 2px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

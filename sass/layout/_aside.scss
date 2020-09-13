@@ -1,0 +1,25 @@
+aside {
+  display: none;
+  align-items: flex-start;
+
+  nav {
+    position: sticky;
+    top: 2rem;
+  }
+
+  @media all and (min-width: map-get($breakpoints, large)) {
+    display: flex;
+  }
+}
+
+aside ul {
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+
+  a:before {
+    content:"⬤";
+    padding-right: 1rem;
+    color: $color-light;
+  }
+}

@@ -1,0 +1,22 @@
+//Improvement and question text
+
+.improve {
+  text-align: center;
+}
+
+.question {
+  @include alignment();
+  flex-direction: column;
+
+  &__body {
+    margin: 2rem;
+  }
+}
+
+//Discussion button
+
+.discussion {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}

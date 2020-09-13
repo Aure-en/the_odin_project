@@ -1,12 +1,34 @@
-@mixin fonts($color: $color-primary, $size: map-get($font-sizes, main), $weight: 300, $decoration: none) {
+//Fonts
+@mixin fonts($color: $color-primary, $size: map-get($font-sizes, main), $weight: 400, $decoration: none) {
   color: $color;
   font-size: $size;
 
-  @if ($weight != 300) {
+  @if ($weight != 400) {
     font-weight: $weight;
   }
 
   @if ($decoration != "none") {
     text-decoration: $decoration;
   }
+}
+
+//Brighten background
+@mixin brighten($color) {
+  background-color: lighten($color, 10%);
+}
+
+//Alignment
+@mixin alignment ($justify-content: center, $align-items: center) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin link-hover() {
+
+  &:hover {
+    color: $color-hover;
+    text-decoration: none;
+  }
+  
 }
