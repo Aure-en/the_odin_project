@@ -20,3 +20,9 @@
   bottom: 1rem;
   right: 1rem;
 }
+
+//Menus
+
+.menu {
+  @include toggle-menu();
+}

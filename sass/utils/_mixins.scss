@@ -32,3 +32,26 @@
   }
   
 }
+
+//Toggle menus
+
+@mixin toggle-menu() {
+
+  &__list {
+    display: none;
+    padding-left: 1rem;
+  }
+
+  &__show::before {
+    content: '▶ ';
+  }
+
+  &.open &__show::before {
+    content: '▼ ';
+  }
+
+  &.open &__list {
+    display: block;
+  }
+
+}

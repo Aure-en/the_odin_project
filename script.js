@@ -1,15 +1,40 @@
 "use strict";
 
-//Display the Community Menu
-const community = document.querySelector(".community a");
-const communityMenu = document.querySelector(".community__menu");
+//Display the toggling menus
+
+  //Student's Solutions (Main > Section #3)
+
+const menuToggle = document.querySelectorAll(".menu__show");
+const menu = document.querySelectorAll(".menu");  
 
 function toggleMenu(event, menu) {
-  menu.classList.toggle("hidden");
   event.preventDefault();
+  menu.classList.toggle("open");
 }
 
-community.addEventListener("click", (e) => toggleMenu(e, communityMenu));
+for (let i = 0 ; i < menuToggle.length ; i++) {
+  menuToggle[i].addEventListener("click", (e) => toggleMenu(e, menu[i]));
+}
+
+//Enables show button
+
+const show = document.querySelector(".show");
+
+function showNav(event, nav) {
+  document.querySelector(`.${event.target.closest("button").dataset.toggle}`).classList.remove("hidden");
+}
+
+show.addEventListener("click", () => showNav(event, "header__nav--medium"));
+
+//Enables close button
+
+const close = document.querySelector(".close");
+
+function closeNav(event, nav) {
+  document.querySelector(`.${event.target.closest("button").dataset.toggle}`).classList.add("hidden");
+}
+
+close.addEventListener("click", () => closeNav(event, "header__nav--medium"));
 
 //Active link on the nav changing depending on the current scroll
 

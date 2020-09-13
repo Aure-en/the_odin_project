@@ -68,7 +68,11 @@ h4 {
 
 .heading2 {
   @include fonts($color-light, map-get($font-sizes, small-heading), 300);
-  text-align: start;
+  text-align: center;
+
+  @media all and (min-width: map-get($breakpoints, large)) {
+    text-align: start;
+  }
 }
 
 //Links
@@ -93,6 +97,12 @@ a {
     @include link-hover();
   }
 
+}
+
+.header__nav--medium {
+  a {
+    @include fonts($color-secondary, 5vh, 300);
+  }
 }
 
 //Section (Extra)

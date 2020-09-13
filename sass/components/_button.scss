@@ -1,3 +1,5 @@
+//Buttons containing text
+
 .btn {
   @include fonts($color-white, map-get($font-sizes, small), 700);
   background: $color-secondary;
@@ -37,4 +39,14 @@
     content: "";
     background: rgba(255, 255, 255, 0.2);
   }
+}
+
+//Buttons closing elements
+
+.close {
+  color: $color-tertiary;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }

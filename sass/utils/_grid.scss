@@ -17,25 +17,29 @@
   padding: 0 1rem;
 }
 
-@for $i from 1 through 12 {
+@for $i from 1 through 6 {
   .row-#{$i} {
     @extend %grid-template;
     grid-template-columns: repeat($i, minmax(auto, 1fr)); 
   }
 }
 
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    @extend %col-padding;
-    grid-column-start: span $i;
+@for $i from 1 through 5 {
+    @for $j from 2 through 7 {
+    .col-#{$i}-#{$j} {
+      @extend %col-padding;
+      grid-column: #{$i} / #{$j};
+    }
   }
 }
 
 @each $key, $value in $breakpoints {
-  @for $i from 1 through 12 {
-    .col-#{$key}-#{$i} {
+  @for $i from 1 through 5 {
+    @for $j from 2 through 7 {
+    .col-#{$key}-#{$i}-#{$j} {
       @media all and (min-width: $value) {
-        grid-column-start: span $i;
+        grid-column: #{$i} / #{$j};
+        }
       }
     }
   }
@@ -52,5 +56,4 @@
     padding: .25rem 1rem;
     flex-direction: column;
   }
-
 }

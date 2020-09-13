@@ -1,25 +1,31 @@
 .footer {
   background: $color-white;
-  padding: 5rem 0;
+  padding: 1rem 0;
+
+  @media all and (min-width: map-get($breakpoints, large)) {
+    padding: 5rem;
+  }
 
   &__brand {
-    @include alignment();
+    display: none;
+
+    @media all and (min-width: map-get($breakpoints, medium)) {
+      @include alignment();
+    }
   }
 
-  &__social {
+  &__social,
+  &__links {
     @include alignment(space-around);
   }
+}
 
-  &__links {
-    @include alignment();
+.footer__links {
+  ul {
+    flex-direction: column;
 
-    ul {
-      flex-direction: column;
-      padding: 0 2rem;
-
-      li {
-        line-height: 1;
-      }
+    li {
+      line-height: 1;
     }
   }
 }
