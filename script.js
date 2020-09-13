@@ -1,5 +1,22 @@
 "use strict";
 
+//Change navigation appearance depending on the viewport's size
+
+const headerNav = document.querySelector(".header__nav")
+
+function changeNav() {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    headerNav.classList.remove("header__nav--full");
+    headerNav.classList.remove("hidden");
+  } else {
+    headerNav.classList.add("header__nav--full");
+    headerNav.classList.add("hidden");
+  }
+}
+
+window.addEventListener("resize", changeNav);
+window.addEventListener("load", changeNav);
+
 //Display the toggling menus
 
 const menuToggle = document.querySelectorAll(".menu__show");
@@ -27,21 +44,21 @@ document.querySelector(".community a").addEventListener("click", (e) => toggleHi
 
 const show = document.querySelector(".show");
 
-function showNav(event, nav) {
+function showNav(event) {
   document.querySelector(`.${event.target.closest("button").dataset.toggle}`).classList.remove("hidden");
 }
 
-show.addEventListener("click", () => showNav(event, "header__nav--medium"));
+show.addEventListener("click", showNav);
 
 //Enables close button
 
 const close = document.querySelector(".close");
 
-function closeNav(event, nav) {
+function closeNav(event) {
   document.querySelector(`.${event.target.closest("button").dataset.toggle}`).classList.add("hidden");
 }
 
-close.addEventListener("click", () => closeNav(event, "header__nav--medium"));
+close.addEventListener("click", closeNav);
 
 //Active link on the nav changing depending on the current scroll
 
@@ -59,22 +76,17 @@ window.addEventListener("scroll", function() {
   const introductionCoords = introduction.getBoundingClientRect();
   const ressourcesCoords = ressources.getBoundingClientRect();
 
-  console.log(pageYOffset < introductionCoords.bottom + pageYOffset);
-  console.log(pageYOffset > introductionCoords.bottom + pageYOffset && pageYOffset < ressourcesCoords.top + pageYOffset);
-  
   function changeActive(newActive) {
     active.classList.remove("active");
-    console.log(active);
     active = newActive;
     newActive.classList.add("active");
-    console.log(newActive);
   }
 
-  if (pageYOffset < introductionCoords.bottom + pageYOffset) {
+  if (0 < introductionCoords.bottom) {
     changeActive(introductionLink);
   }
 
-  else if (pageYOffset > introductionCoords.bottom + pageYOffset && pageYOffset < ressourcesCoords.top + pageYOffset) {
+  else if (0 > introductionCoords.bottom && 0 < ressourcesCoords.top) {
     changeActive(assignmentLink);
   }
 
