@@ -13,12 +13,14 @@
   }
 }
 
-//Discussion button
+//Discussion buttons list
 
 .discussion {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  @include alignment(center, center);
+  flex-direction: column;
 }
 
 //Menus

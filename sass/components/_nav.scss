@@ -4,6 +4,8 @@ nav {
 
 .header__nav {
 
+  display: none;
+
   @media all and (min-width: map-get($breakpoints, medium)) {
     @include alignment(flex-end);
   }
@@ -37,4 +39,8 @@ nav {
     }
 
   }
+}
+
+.community {
+  position: relative;
 }

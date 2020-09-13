@@ -1,9 +1,5 @@
 .header {
   background: $color-white;
   padding: .5rem 5vw;
-  @include alignment(space-around, center);
-
-  .col-1 {
-  align-items: center;
-  }
+  @include alignment(space-between, center);
 }

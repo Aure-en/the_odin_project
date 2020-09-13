@@ -27,7 +27,7 @@
         <ul>
           <li><a class="nav-link" href="https://theodinproject.com/tracks">Curriculum</a></li>
           <li class="community"><a class="nav-link" href="">Community <i class="fas fa-caret-down"></i></a>
-            <ul class="box box--small hidden">
+            <ul class="community__box box box--small hidden">
               <li><a class="social-link" href="https://forum.theodinproject.com/"><i class="fas fa-users"></i> Forum</a></li>
               <li><a class="social-link" href="https://discord.com/invite/V75WSQG"><i class="fas fa-comment"></i> Chat</a></li>
             </ul>
@@ -242,8 +242,11 @@
 
   </div>
 
-  <button class="btn btn--round btn--secondary discussion" type="button"><i class="fas fa-comments"></i></button>
-  
+  <span class="discussion">
+      <button class="btn btn--round btn--secondary discussion__hidden hidden" type="button"><i class="fas fa-comment"></i></button>
+      <button class="btn btn--round btn--secondary discussion__hidden hidden" type="button"><i class="fas fa-users"></i></button>
+      <button class="btn btn--round btn--secondary btn--big" type="button"><i class="fas fa-comments"></i></button>
+  </span>
 
   <footer class="footer container-fluid">
 
