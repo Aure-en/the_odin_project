@@ -44,16 +44,3 @@
     }
   }
 }
-
-.box {
-  width: 80%;
-  margin: 5rem auto 2rem auto;
-  padding: 2.5rem 4rem;
-  background-color: $color-white;
-  box-shadow: $box-shadow;
-
-  &--small {
-    padding: .25rem 1rem;
-    flex-direction: column;
-  }
-}

@@ -1,4 +1,4 @@
-//Buttons containing text
+//General buttons
 
 .btn {
   @include fonts($color-white, map-get($font-sizes, small), 700);

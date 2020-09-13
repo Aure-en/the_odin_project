@@ -86,15 +86,15 @@ window.addEventListener("scroll", function() {
 
 //Display bottoms icons on hover
 
-const discussion = document.querySelector(".discussion");
+const buttonList = document.querySelector(".button_list");
 
 function displayIcons(e) {
-  document.querySelectorAll(".discussion__hidden").forEach( (item) => item.classList.remove("hidden"));
+  document.querySelectorAll(".list__hidden").forEach( (item) => item.classList.remove("hidden"));
 }
 
 function hideIcons(e) {
-  document.querySelectorAll(".discussion__hidden").forEach( (item) => item.classList.add("hidden"));
+  document.querySelectorAll(".list__hidden").forEach( (item) => item.classList.add("hidden"));
 }
 
-discussion.addEventListener("mouseenter", displayIcons);
-discussion.addEventListener("mouseleave", hideIcons);
+buttonList.addEventListener("mouseenter", displayIcons);
+buttonList.addEventListener("mouseleave", hideIcons);
